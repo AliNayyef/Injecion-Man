@@ -1,14 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='injection-man',  
+    name='Injection-Man',  # Name of your tool
     version='1.0.0',  # Tool version
-    packages=find_packages(),
-    py_modules=['main'],  # Main script name without .py extension
-    install_requires=[],  # Add dependencies from requirements.txt
+    packages=find_packages(),  # Automatically find packages in the directory
+    install_requires=[],
     entry_points={
         'console_scripts': [
-            'injection-man=injection_man.injection_man:main',  
+            'injection-man=injection_man.main:main',  
         ],
     },
     description='''
