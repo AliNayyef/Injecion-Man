@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Injection-Man',  # Name of your tool
-    version='1.0.0',  # Tool version
-    packages=find_packages(),  # Automatically find packages in the directory
+    name='Injection-Man',  
+    version='1.0.0',  
+    packages=find_packages(), 
     install_requires=[],
     entry_points={
         'console_scripts': [
