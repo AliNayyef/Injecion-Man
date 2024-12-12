@@ -8,7 +8,7 @@ setup(
     install_requires=[],  # Add dependencies from requirements.txt
     entry_points={
         'console_scripts': [
-            'injecion-man=mytool:main',  # 'mytool' is the command to run
+            'injection-man=mytool:main',  # 'mytool' is the command to run
         ],
     },
     description='''
