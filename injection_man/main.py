@@ -1,5 +1,5 @@
 from injection_man import sql_injection, xss
-import xss
+
 import time
 import sys
 
