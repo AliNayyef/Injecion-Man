@@ -1,1 +1,4 @@
 include injection_man/*.txt
+include requirements.txt
+include setup.py
+recursive-include injection-man *.py
