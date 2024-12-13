@@ -2,8 +2,7 @@ from selenium import webdriver
 import speedtest
 
 def time_avareging(target_url):
-    with open("testing_Sql.txt", "r") as file:
-        sql_payloads = file.readlines()
+    sql_payloads = ['1','\'']
     st = speedtest.Speedtest()
     driver = webdriver.Chrome()
     list_of_time = []
