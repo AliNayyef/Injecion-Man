@@ -1,4 +1,4 @@
-from injection_man import sql_injection, xss
+import sql_injection, xss
 import time
 import sys
 
