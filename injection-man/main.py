@@ -1,4 +1,5 @@
-from injection_man import sql_injection, xss
+from injection_man.sql_injection import sql_i
+from injection_man.xss import xss
 import xss
 import time
 import sys
@@ -38,11 +39,11 @@ def main():
         target_url = input("Enter Targer URL : ")
         input_id = input("Enter Input Id : ")
         button_id = input("Enter Button Value : ")
-        xss.xss(target_url, input_id, button_id)
+        xss(target_url, input_id, button_id)
 
     elif choose == 2:
         target_url = input("Enter Targer URL : ")
-        sql_injection.sql_i(target_url)
+        sql_i(target_url)
 
     else:
         print("Wrong Selection")
