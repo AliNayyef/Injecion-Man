@@ -1,10 +1,11 @@
 from selenium import webdriver
 import time
-import check_timing
-
+from injection_man import check_timing
+from importlib.resources import files
 
 def sql_i(target_url):
-    with open("sql.txt", "r") as file:
+    sql_file = files('injection_man').joinpath('sql.txt')
+    with open(sql_file, "r") as file:
         sql_payloads = file.readlines()
 
     injection_found = ["error in your SQL syntax", "SQL syntax", "Warning: mysql_", "Unclosed quotation mark after the character string"]
