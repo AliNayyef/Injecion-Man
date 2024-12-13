@@ -1,8 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+from importlib.resources import files
 def xss(target_url, input_id, button_value):
-    with open("xss.txt", "r", encoding="utf-8") as file:
+    xss_file = files('injection_man').joinpath('xss.txt')
+    with open(xss_file, "r", encoding="utf-8" ) as file:
         xss_payloads = file.readlines()
 
     driver = webdriver.Chrome()
